@@ -1,0 +1,38 @@
+#dashboard-stock-list {
+    height: 400px;
+    overflow-y: auto;
+}
+
+#dashboard-graph-container {
+    height: 400px;
+}
+
+#dashboard-stock-list .card {
+    margin: 10px 0;
+}
+
+#dashboard-stock-list .card:hover {
+    cursor: pointer;
+}
+
+#dashboard-stock-list .card .card-header {
+    padding: 10px 20px;
+}
+
+#dashboard-stock-list .card .card-header .badge {
+    font-weight: normal;
+    float: right;
+}
+
+#dashboard-stock-list .card .card-body {
+    padding: 10px 20px;
+}
+
+#dashboard-stock-list .card .card-body .col-8 {
+    align-items: center;
+    display: flex;
+}
+
+#dashboard-stock-list .card .card-body .col-4 {
+    text-align: right;
+}

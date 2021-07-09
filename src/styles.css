@@ -1,0 +1,47 @@
+.page-button, .page-description {
+    font-weight: 500;
+}
+
+.page-button {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.premium-badge {
+    font-weight: normal;
+}
+
+.main-col {
+    padding: 0 !important;
+}
+
+.main-row {
+    height: 100vh;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.page-sub-heading {
+    margin: 20px 0;
+}
+
+.page-col {
+    padding: 30px;
+}
+
+.badge-tooltip {
+    float: right;
+    color: white !important;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.badge-tooltip:hover {
+    cursor: pointer;
+}
+
+body {
+    user-select: none;
+}

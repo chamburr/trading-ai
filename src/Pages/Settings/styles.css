@@ -1,0 +1,17 @@
+.settings-badge-button {
+    font-weight: normal;
+    float: right;
+    color: white !important;
+}
+
+.settings-badge-button:hover {
+    cursor: pointer;
+}
+
+#settings-terms {
+    resize: none;
+    height: 500px;
+    background-color: white;
+    margin: 10px 0;
+    white-space: pre-wrap;
+}
