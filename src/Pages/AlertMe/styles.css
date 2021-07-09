@@ -1,0 +1,9 @@
+#alert-me-alert-manage {
+    height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.alert-me-margin {
+    margin: 0px 0px 16px 0px;
+}

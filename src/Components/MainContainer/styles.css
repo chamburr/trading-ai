@@ -1,0 +1,11 @@
+.page-container {
+    width: auto;
+    padding: 0;
+    margin: 30px;
+}
+
+#alert-container {
+    margin: auto;
+    position: fixed;
+    right: 30px;
+}

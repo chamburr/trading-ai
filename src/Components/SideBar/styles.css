@@ -1,0 +1,42 @@
+#sidebar {
+    background-color: #21ce99;
+    height: 100%;
+}
+
+#sidebar hr {
+    margin: 0;
+    background-color: #fff;
+    height: 1px;
+}
+
+.sidebar-button {
+    color: #fff !important;
+    transition: all .8s;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 500;
+    text-indent: 5%;
+    user-select: none;
+}
+
+.sidebar-button:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .4);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar-button i {
+    float: right;
+    margin-top: 5px;
+}
+
+.sidebar-button img {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.disabled-sidebar-button {
+    color: grey !important;;
+}

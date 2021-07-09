@@ -1,0 +1,108 @@
+{
+  "name": "trading-ai",
+  "productName": "Trading AI",
+  "version": "0.1.0",
+  "description": "Your stock trading companion, powered by AI.",
+  "main": "main.js",
+  "scripts": {
+    "build": "yarn build:renderer && yarn build:main",
+    "build:main": "cross-env NODE_ENV=production electron-builder build -p never",
+    "build:renderer": "cross-env NODE_ENV=production react-scripts build",
+    "lint": "cross-env NODE_ENV=development eslint . --ext .js,.jsx",
+    "package": "rm -rf dist/ && yarn build && electron-builder build --publish never",
+    "postinstall": "electron-builder install-app-deps",
+    "rebuild": "electron-rebuild --parallel --types prod,dev,optional",
+    "start": "concurrently \"yarn start:main\" \"yarn start:renderer\"",
+    "start:main": "cross-env NODE_ENV=development electron .",
+    "start:renderer": "cross-env NODE_ENV=development BROWSER=none react-scripts start"
+  },
+  "author": {
+    "name": "CHamburr",
+    "email": "hi@chamburr.xyz"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^7.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@tensorflow/tfjs": "^3.7.0",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "chart.js": "^2.9.4",
+    "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
+    "electron": "13.1.6",
+    "electron-builder": "^22.11.7",
+    "electron-rebuild": "^2.3.5",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "react-bootstrap-typeahead": "^5.1.4",
+    "react-scripts": "^4.0.3",
+    "request-promise": "^4.2.6",
+    "typescript": "^4.3.5"
+  },
+  "homepage": "./",
+  "browserslist": [],
+  "build": {
+    "productName": "Trading AI",
+    "copyright": "Copyright © 2021 CHamburr",
+    "files": [
+      "!src${/*}",
+      "!public${/*}"
+    ],
+    "directories": {
+      "buildResources": "resources"
+    },
+    "mac": {
+      "appId": "com.chamburr.trading-ai",
+      "category": "public.app-category.finance",
+      "icon": "resources/icons.icns"
+    },
+    "dmg": {
+      "icon": "resources/icon.icns"
+    },
+    "win": {
+      "appId": "chamburr.trading-ai",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "resources/icon.ico",
+      "publisherName": "CHamburr"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "resources/icon.ico",
+      "uninstallerIcon": "resources/icon.ico",
+      "license": "resources/license.txt"
+    },
+    "publish": {
+      "provider": "github",
+      "repo": "training-ai",
+      "owner": "chamburr",
+      "releaseType": "release"
+    },
+    "npmRebuild": false,
+    "electronDownload": {
+      "version": "13.1.6"
+    },
+    "extraResources": [
+      "data.db"
+    ],
+    "extraMetadata": {
+      "homepage": "https://github.com/chamburr/trading-ai"
+    },
+    "extends": null
+  }
+}
