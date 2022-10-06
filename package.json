@@ -16,10 +16,7 @@
     "start:main": "cross-env NODE_ENV=development electron .",
     "start:renderer": "cross-env NODE_ENV=development BROWSER=none react-scripts start"
   },
-  "author": {
-    "name": "CHamburr",
-    "email": "hi@chamburr.com"
-  },
+  "author": "Han Cen <hi@chamburr.com>",
   "license": "MIT",
   "dependencies": {
     "better-sqlite3": "^7.4.1",
