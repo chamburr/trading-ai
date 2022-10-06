@@ -14,19 +14,19 @@ These are some of the features of Trading AI.
 
 View the stock prices at different ranges, as well as various indicators including WMA, SMA, VWAP, and RSI.
 
-![](https://chamburr.xyz/u/znq6l7.png)
+![](https://user-images.githubusercontent.com/42373024/194300468-4fcc30d5-2bb4-4872-ac5d-35ee27dc3628.png)
 
 ### Alert Me
 
 Get a notification when the stock price hit your target price, with an option to automatically renew the alert.
 
-![](https://chamburr.xyz/u/uK5EQO.png)
+![](https://user-images.githubusercontent.com/42373024/194300490-fda06e6f-8415-4961-9666-9f65cc615fc7.png)
 
 ### Predict
 
 Predict the stock price through training a model with our algorithm, powered by machine learning.
 
-![](https://chamburr.xyz/u/Zn9X4q.png)
+![](https://user-images.githubusercontent.com/42373024/194300496-8842faba-a1fb-428a-a99e-92b2c85a333f.png)
 
 ## Building
 
